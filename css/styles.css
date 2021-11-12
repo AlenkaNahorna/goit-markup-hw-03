@@ -3,11 +3,38 @@
   --second-title-color: #2196f3;
   --first-text-color: #757575;
   --second-text-color: #ffffff;
-  --background-header: #ffffff;
+  --background-main: #ffffff;
   --background-hero: #2f303a;
-  --background-section-one: #e5e5e5;
   --background-section-three: #f5f4fa;
   --text-logo-primary: #000000;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+button {
+  cursor: pointer;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 body {
@@ -37,15 +64,31 @@ body {
 /* -------------------HEADER---------------------- */
 
 .header {
-  background-color: var(--background-header);
+  background-color: var(--background-main);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  outline: 2px solid tomato;
 }
-
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.contacts {
+  display: flex;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+}
 .logo {
   font-family: Raleway;
   font-weight: 700px;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+
+  outline: 2px solid tomato;
 }
 .logo:hover,
 .logo:focus {
@@ -64,6 +107,8 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-title-color);
+
+  outline: 2px solid tomato;
 }
 
 .nav-link:hover,
@@ -80,6 +125,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--first-text-color);
+  outline: 2px solid tomato;
 }
 .contact:hover,
 .contact:focus {
@@ -114,7 +160,7 @@ body {
 /* ------------------FEATURES--------------------- */
 
 .features {
-  background-color: var(--background-section-one);
+  background-color: var(--background-main);
 }
 .features-title {
   font-weight: 700px;
@@ -132,7 +178,7 @@ body {
 
 /* ------------------------WORKS------------------ */
 .works {
-  background-color: var(--background-section-one);
+  background-color: var(--background-main);
 }
 
 .section-title {
@@ -201,7 +247,7 @@ body {
 /* ---------------------PORTFOLIO----------------------- */
 
 .portfolio {
-  background-color: var(--background-section-one);
+  background-color: var(--background-main);
 }
 
 .secondary-btn {
