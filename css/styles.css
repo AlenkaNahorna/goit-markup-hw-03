@@ -7,6 +7,7 @@
   --background-hero: #2f303a;
   --background-section-three: #f5f4fa;
   --text-logo-primary: #000000;
+  --main-border: #ececec;
 }
 p,
 h1,
@@ -70,7 +71,7 @@ body {
 /* -------------------HEADER---------------------- */
 
 .header {
-  border: 1px solid #ececec;
+  border: 1px solid var(--main-border);
 }
 .header-container {
   display: flex;
@@ -96,10 +97,12 @@ body {
   color: var(--text-logo-primary);
 }
 
+.navigation {
+  margin-left: 93px;
+}
 .nav-list {
   display: flex;
   align-items: center;
-  margin-left: 93px;
 }
 
 .nav-item:not(:last-child) {
@@ -377,9 +380,9 @@ body {
 
 .portfolio-tex {
   padding: 20px 24px;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
+  border-right: 1px solid var(--main-border);
+  border-bottom: 1px solid var(--main-border);
+  border-left: 1px solid var(--main-border);
   background-color: var(--background-main);
 }
 
